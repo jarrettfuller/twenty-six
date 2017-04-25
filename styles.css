@@ -1,0 +1,109 @@
+* {
+        padding: 0px;
+        margin: 0px;
+    }
+    h1 {
+        font-family: 'Anton', sans-serif;
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 65px;
+    }
+h3 {
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    text-transform: uppercase;
+}
+    .logo {
+        width: 175px;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        padding-top: 50px;
+        padding-left: 25px;
+        padding-right: 20px;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .contact {
+    position: fixed;
+    bottom: 25px;
+}
+    .contact p {
+        font-family: 'Cutive Mono', monospace;
+        color: white;
+        font-size: 12px;
+}
+    .content {
+        padding-left: 250px;
+        padding-right: 50px;
+}
+    .hero {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 75%;
+    }
+    .information {
+        font-family: 'Cutive Mono', monospace;
+        display: flex;
+        font-size: 14px;
+        position: relative;
+        bottom: 0;
+    }
+    .services {
+        width: 30%;
+        padding-right: 3%;
+}
+.services li {
+    list-style: none;
+}
+    .about {
+        width: 30%;
+                padding-right: 3%;
+}
+    .other {
+        width: 30%;
+                padding-right: 3%;
+}
+
+/* MOBILE
+----------------------------------- */
+@media only screen and (max-width: 715px) {
+
+    .logo {
+        width: 100%;
+        height: 35px;
+        padding: 20px;
+    }
+    .logo img {
+        width: 100px;
+        float: right;
+        padding-right: 40px;
+    }
+    .contact {
+        position: inherit;
+        top: 25px;
+    }
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        max-width: 100%;
+    }
+    .hero {
+        width: 100%;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .information {
+        display: block;
+    }
+    .services,
+    .about,
+    .other {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
