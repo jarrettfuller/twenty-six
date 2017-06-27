@@ -12,127 +12,97 @@
 
     </head>
     <body>
-        <div class="logo">
 
-            <img src="logo-white.png">
-
-            <div class="contact">
-            <p>hi@twenty-six.design</p>
-            <p>@twenty_six_design</p>
+            <div class="header">
+                <div class="brand">
+                    <p><b>twenty-six</b> is a full-service design studio specializing in brand development and editorial design, mixing client work and original content.</p>
                 </div>
 
+                <div class="location">
+                    <p>Jarrett Fuller</p>
+                <p>Brooklyn, NY</p></div>
+
+                <div class="contact-info">
+                <p>mail@twentysix.design</p>
+                <p>@twentysix_design</p></div>
+
+                </div>
+
+        <div class="portfolio">
+
+        <div class="grouped">
+            <div class="six columns"><img src="portfolio/sts-exhibition-1.jpg" /></div>
+            <div class="three columns"><img src="portfolio/sts-1.png" /></div>
+            <div class="three columns"><img src="portfolio/info-zine_01.jpg" /></div>
+
+            <div class="three columns"><img src="portfolio/sts-book_3.jpg" /></div>
+            <div class="three columns"><img src="portfolio/04.25.16_01.jpg" /></div>
         </div>
 
-        <div class="content">
-
-        <div class="hero">
-        <h1>A full-service design studio specializing in brand development and editorial design.</h1>
+        <div class="grouped">
+            <div class="three columns">
+                <div class="twelve columns"><img src="portfolio/photo-book_07.jpg" /></div>
+                <div class="twelve columns"><img src="portfolio/fuller-display-01.gif" /></div>
 
             </div>
 
-            <div class="information">
+            <div class="nine columns"><img src="portfolio/gms15_01.jpg" /></div>
+        </div>
+
+        <div class="grouped">
+            <div class="six columns"><img src="https://cdn.dribbble.com/users/1666/screenshots/3148529/12.09.16_01.jpg" /></div>
+            <div class="three columns"><img src="http://jarrettfuller.com/images/projects/sts-1.png" /></div>
+            <div class="three columns"><img src="http://jarrettfuller.com/images/projects/info-zine_01.jpg" /></div>
+
+            <div class="three columns"><img src="http://jarrettfuller.com/images/projects/sts-book_3.jpg" /></div>
+            <div class="three columns"><img src="https://cdn.dribbble.com/users/1666/screenshots/2682140/04.25.16_01.jpg" /></div>
+        </div>
+
+        </div>
+
+            <div class="big-footer">
 
         <div class="services">
-        <h3>Services</h3>
+        <h3>What we do</h3>
             <ul>
-                <li>Branding</li>
-                <li>Identity Development</li>
-                <li>Writing</li>
-                <li>Interactive and Web Design</li>
-                <li>Curation</li>
                 <li>Art Direction</li>
-                <li>Content Strategy</li>
+                <li>Branding/Identity Development</li>
+                <li>Content Strategy/Development</li>
+                <li>Curation</li>
+                <li>Editorial Design</li>
+                <li>Interactive and Web Design</li>
+                <li>Print and packaging design</li>
+                <li>Writing</li>
                 </ul>
         </div>
 
-            <div class="about">
+            <div class="information">
 
 
-            <h3>Studio</h3>
-            <p>twenty-six is run by Jarrett Fuller and a rotating cast of collaborators. </p>
+            <h3>Who we are</h3>
+            <p>twenty-six is run by Jarrett Fuller and a rotating cast of collaborators. Jarrett Fuller is the founder and principal of twenty-six, editorial director for Design Observer, host of Scratching the Service, and adjunct faculty at TK. He has previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received in MFA in graphic design and critical studies from the Maryland Institute College of Art. </p>
 
         </div>
 
-                        <div class="other">
+                        <div class="clients">
 
-
-            <h3>Principal</h3>
-            <p>Jarrett Fuller is the founder and principal of twenty-six, editorial director for Design Observer, host of Scratching the Service, and adjunct faculty at TK. He has previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received in MFA in graphic design and critical studies from the Maryland Institute College of Art.</p>
+            <h3>Who we've worked with</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Johns Hopkins University</li>
+                <li>Maryland Institute College of Art</li>
+                <li>Warby Parker</li>
+                <li>Whitney Museum of American Art</li>
+                <li>Wondermade</li>
+                </ul>
 
         </div>
 
                 </div>
-                </div>
 
 
-        <script type="text/javascript">
 
-    // Hi. This is not really production-quality code, just something I
-    // patched together for an experimental essay. But if you have
-    // questions, I'd be happy to answer them.
-
-    var pi = Math.PI;
-    var sin = Math.sin;
-    var floor = Math.floor;
-    var abs = Math.abs;
-    var pow = Math.pow;
-
-    // Today in Bad Variable Names, we visit something I chose to call “epoch”…
-    var epoch = function() { return new Date().getTime()/500; }
-    // The last number in that line controls color cycle speed.
-
-    function clip(min, n, max) {
-        if (min > n) { return min; }
-        if (max < n) { return max; }
-        return n;
-    }
-
-    // This is an adaptation of the rainbow function described at
-    // http://basecase.org/env/on-rainbows (K is for @skimbrel, my
-    // buddy who had the central insight that sines work for this).
-    // We lighten and desaturate it a little.
-    function K(h) {
-        h *= -1;
-        var r = sin(pi * h);
-        var g = sin(pi * (h + 1/3));
-        var b = sin(pi * (h + 2/3));
-        return [r, g, b].map(function (c) {
-            c = c*c;
-            c = 0.65 + (c*0.4); // HURRRR
-            return floor(c * 255);
-        });
-    }
-
-    function recolor(plus) {
-        var cycle = ((epoch()/100) + plus) % 1;
-        var color = K(cycle);
-        color = 'rgb(' + color.join(',') + ')';
-        $('body').css({'background-color': color});
-    }
-
-    $(document).ready(function(){
-        recolor(0);
-        // The last number in this line is the update interval (in ms):
-        a = function() { setInterval(function() { recolor(0) }, 200); }
-        a();
-    });
-
-/* scrolling title bar */
-<!--
-var space = " ";
-var speed = "50";
-var pos = 0;
-var msg = "a b c d e f g h i j k l m n o p q r s t u v w x y z ";
-function Scroll()
-{
-document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
-pos++;
-if (pos > msg.length) pos = 0;
-window.setTimeout("Scroll()", speed);
-}
-Scroll();
--->
-    </script>
 
     </body>
 </html>
