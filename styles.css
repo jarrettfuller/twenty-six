@@ -54,17 +54,108 @@ h3 {
         width: 30%;
         padding-right: 3%;
 }
-.services li {
-    list-style: none;
+    .services li {
+        list-style: none;
 }
     .about {
         width: 30%;
                 padding-right: 3%;
 }
-    .other {
+    .clients {
         width: 30%;
                 padding-right: 3%;
 }
+    .clients li {
+    list-style: none;
+}
+/* NEW
+----------------------------------- */
+.header {
+    width: 100%;
+    background-color: #222222;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Cutive Mono', monospace;
+}
+.brand {
+    width: 40%;
+    padding-right: 10%;
+}
+.contact-info {
+    width: 25%;
+
+}
+.location {
+    width: 25%;
+
+}
+.big-footer {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: 25px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+/* GRID
+----------------------------------- */
+.portfolio {
+    width: 100%;
+}
+.portfolio img {
+    width: 100%;
+    vertical-align: bottom;
+}
+    .row,
+    .group,
+    .grouped {
+        overflow: hidden;
+    }
+    .column,
+    .columns {
+    float: left;
+    /*
+    background: grey;
+    height: 200px;
+    border: 1px solid red; */
+    }
+
+    .one     {width: calc(100% / 12 * 01); }
+    .two     {width: calc(100% / 12 * 02); }
+    .three   {width: calc(100% / 12 * 03); }
+    .four    {width: calc(100% / 12 * 04); }
+    .five    {width: calc(100% / 12 * 05); }
+    .six     {width: calc(100% / 12 * 06); }
+    .seven   {width: calc(100% / 12 * 07); }
+    .eight   {width: calc(100% / 12 * 08); }
+    .nine    {width: calc(100% / 12 * 09); }
+    .ten     {width: calc(100% / 12 * 10); }
+    .eleven  {width: calc(100% / 12 * 11); }
+    .twelve  {width: calc(100% / 12 * 12); }
+
+    /* column offset */
+    .offset-by-one     {margin-left: calc(100% / 12 * 01); }
+    .offset-by-two     {margin-left: calc(100% / 12 * 02); }
+    .offset-by-three   {margin-left: calc(100% / 12 * 03); }
+    .offset-by-four    {margin-left: calc(100% / 12 * 04); }
+    .offset-by-five    {margin-left: calc(100% / 12 * 05); }
+    .offset-by-six     {margin-left: calc(100% / 12 * 06); }
+    .offset-by-seven   {margin-left: calc(100% / 12 * 07); }
+    .offset-by-eight   {margin-left: calc(100% / 12 * 08); }
+    .offset-by-nine    {margin-left: calc(100% / 12 * 09); }
+    .offset-by-ten     {margin-left: calc(100% / 12 * 10); }
+    .offset-by-eleven  {margin-left: calc(100% / 12 * 11); }
+    .offset-by-twelve  {margin-left: calc(100% / 12 * 12); }
+
 
 /* MOBILE
 ----------------------------------- */
