@@ -1,75 +1,32 @@
 * {
-        padding: 0px;
-        margin: 0px;
+    padding: 0px;
+    margin: 0px;
     }
-    h1 {
-        font-family: 'Anton', sans-serif;
-        text-transform: uppercase;
-        font-size: 70px;
-        line-height: 65px;
+h1 {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+    line-height: 65px;
     }
 h3 {
     font-weight: bold;
     font-family: 'Cutive Mono', monospace;
     text-transform: uppercase;
 }
-    .logo {
-        width: 175px;
-        background-color: black;
-        height: 100vh;
-        position: fixed;
-        padding-top: 50px;
-        padding-left: 25px;
-        padding-right: 20px;
-    }
-    .logo img {
-        width: 150px;
-    }
-    .contact {
-    position: fixed;
-    bottom: 25px;
+p {
+    font-size: 13px;
 }
-    .contact p {
-        font-family: 'Cutive Mono', monospace;
-        color: white;
-        font-size: 12px;
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: .5px solid white;
 }
-    .content {
-        padding-left: 250px;
-        padding-right: 50px;
+a:hover {
+    border-bottom: 1px solid white;
 }
-    .hero {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        width: 75%;
-    }
-    .information {
-        font-family: 'Cutive Mono', monospace;
-        display: flex;
-        font-size: 14px;
-        position: relative;
-        bottom: 0;
-    }
-    .services {
-        width: 30%;
-        padding-right: 3%;
+a:active {
+    color: white;
 }
-    .services li {
-        list-style: none;
-}
-    .about {
-        width: 30%;
-                padding-right: 3%;
-}
-    .clients {
-        width: 30%;
-                padding-right: 3%;
-}
-    .clients li {
-    list-style: none;
-}
-/* NEW
------------------------------------ */
 .header {
     width: 100%;
     background-color: #222222;
@@ -103,8 +60,39 @@ h3 {
     color: white;
     display: flex;
     box-sizing: border-box;
+        font-family: 'Cutive Mono', monospace;
 }
-
+.services {
+    width: 25%;
+    padding-right: 0%;
+}
+    .services li {
+        list-style: none;
+}
+    .about {
+        width: 40%;
+                padding-right: 10%;
+}
+    .clients {
+        width: 25%;
+                padding-right: 0%;
+}
+    .clients li {
+    list-style: none;
+}
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #222222;
+    border-top: 1px solid white;
+    font-family: 'Cutive Mono', monospace;
+    color: white;
+    display: flex;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+}
 
 /* GRID
 ----------------------------------- */
