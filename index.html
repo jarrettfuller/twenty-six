@@ -1,148 +1,145 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title>twenty-six | abcdefghijklmnopqrstuvwxyz</title>
-        <meta name="viewport" content="width=device-width">
-        <meta charset="UTF-8">
-        <link href="styles.css" type="text/css" rel="stylesheet">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+---
+title: twenty-six
+layout: default
+---
+<div class="intro">
 
-    </head>
-    <body>
+<h1>twenty-six is a multidisciplinary design and editorial studio, mixing client work and self-initiated projects.</h1>    </div>
 
-            <div class="header">
-                <div class="brand">
-                    <p><b><a href="#">twenty-six</a></b> is a full-service design studio specializing in brand development and editorial design, mixing client work and self-initiated projects.</p>
-                </div>
+<ul class="blog-tags-list clearfix">
 
-                <div class="location">
-                    <p><a href="http://www.jarrettfuller.com">Jarrett Fuller</a></p>
-                <p>Brooklyn, NY</p></div>
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
+          {% assign c = tag | first %}
+          {% assign posts = tag | last %}
+          <a href onclick="filter('{{ c }}'); return false;"><li class="blog-tags-item" id="{{ c }}-item">
+            {{ c }}
+          </li></a>
+        {% endfor %}
+          <a href onclick="filter('all'); return false;"><li class="blog-tags-item">All</li></a>
+      </ul>
 
-                <div class="contact-info">
-                <p><a href="mailto:mail@twenty-six.design">mail@twenty-six.design</a></p>
-                    <p><a href="http://www.twitter.com/26_design">@26_design</a></p></div>
 
-                </div>
 
-        <div class="portfolio">
 
-        <div class="grouped">
-            <div class="six columns"><img src="portfolio/sts-exhibition-1.jpg" /></div>
-            <div class="three columns"><img src="portfolio/04.25.16_01.jpg" /></div>
-            <div class="three columns"><img src="portfolio/info-zine_01.jpg" /></div>
+    <main class="preview">
 
-            <div class="three columns"><img src="portfolio/sts-book_3.jpg" /></div>
-            <div class="three columns"><img src="portfolio/sts-1.png" /></div>
+
+      <div class="blog-list-container" id="all-container">
+
+  {% for post in site.posts %}
+        <div class="work">
+        <a href="{{ site.github.url }}{{ post.url }}">
+        <div class="project">
+            <div class="project_image"><img src="{{ post.image }}"></div>
+            <div class="project_title">{{ post.title }}</div>
+            <div class="project_tags">{% for tags in post.tags %}
+                <li>{{ tags }}</li>
+                {% endfor %}</div>
         </div>
+    </a>
+</div>
+    {% endfor %}
+      </div>
 
-        <div class="grouped">
-            <div class="three columns">
-                <div class="twelve columns"><img src="portfolio/photo-book_07.jpg" /></div>
-                <div class="twelve columns"><img src="portfolio/fuller-display-01.gif" /></div>
+      {% for tag in site.tags %}
+        {% assign c = tag | first %}
+        {% assign posts = tag | last %}
+        <div class="blog-list-container hidden" id="{{ c }}-container">
 
-            </div>
-
-            <div class="nine columns"><img src="portfolio/gms15_01.jpg" /></div>
+            {% for post in posts %}
+              {% if post.tags contains c %}
+<div class="work">
+        <a href="{{ site.github.url }}{{ post.url }}">
+        <div class="project">
+            <div class="project_image"><img src="{{ post.image }}"></div>
+            <div class="project_title">{{ post.title }}</div>
+            <div class="project_tags"><ul>
+                {% for tags in post.tags %}
+                <li>{{ tags }}</li>
+                {% endfor %}
+    </ul></div>
         </div>
-
-        <div class="grouped">
-            <div class="six columns"><img src="portfolio/study-hall.jpg" /></div>
-            <div class="three columns"><img src="portfolio/essay-book_01.jpg" /></div>
-            <div class="three columns"><img src="portfolio/ig_01.jpg" /></div>
-
-            <div class="three columns"><img src="portfolio/annual-report.jpg" /></div>
-            <div class="three columns"><img src="portfolio/05.06.16_02.jpg" /></div>
-        </div>
-
-                    <div class="grouped">
-                                    <div class="three columns">
-
-            <img src="portfolio/juriedshow-poster.png"/>
-                        <img src="portfolio/wp_2011_1.jpg" /></div>
-
-            <div class="nine columns"><img src="portfolio/gd-readings-1.png" /></div>
-
-
-        </div>
-
-                    <div class="grouped">
-            <div class="twelve columns"><img src="portfolio/gms14_04.jpg" /></div>
+    </a>
+</div>
+              {% endif %}
+            {% endfor %}
 
         </div>
+      {% endfor %}
 
-        </div>
-
-            <div class="big-footer">
-
-        <div class="about">
+        </main>
 
 
-            <h3>Who we are</h3>
-            <p>twenty-six is run by designer, writer, and educator Jarrett Fuller and a rotating cast of collaborators. Jarrett hosts the weekly podcast, Scratching the Surface, and teaches in Pratt Institute's graduate program, The New School Parsons School of Design's undergraduate program, and is a Senior Lecturer at the University of the Arts. He has previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his MFA in graphic design and critical studies from the Maryland Institute College of Art. </p>
-<br/>
-            <p><i>Full PDF portfolio available upon request.</i></p>
+<script>
 
-        </div>
+    function filter(tag) {
+  setActivetag(tag);
+  showContainer(tag);
+}
 
-        <div class="services">
-        <h3>What we do</h3>
-            <ul>
-                <li>Art Direction</li>
-                <li>Branding/Identity Development</li>
-                <li>Content Strategy/Development</li>
-                <li>Curation</li>
-                <li>Editorial Design</li>
-                <li>Interactive and Web Design</li>
-                <li>Print and Packaging Design</li>
-                <li>Strategic Design</li>
-                <li>Writing</li>
-                </ul>
-        </div>
+function setActivetag(tag) {
+  // loop through all items and remove active class
+  var items = document.getElementsByClassName('blog-tags-item');
+  for(var i=0; i < items.length; i++) {
+    items[i].setAttribute('class', 'blog-tags-item');
+  }
 
-        <div class="clients">
+  // set the selected tag's item to active
+  var item = document.getElementById(tag + '-item');
+  if(item) {
+    item.setAttribute('class', 'blog-tags-item active');
+  }
+}
 
-            <h3>Who we've worked with</h3>
-              <ul>
-                  <li>Design Observer</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Johns Hopkins University</li>
-                <li>Maryland Institute College of Art</li>
-                <li>Study Hall, LLC</li>
-                <li>Warby Parker</li>
-                <li>Whitney Museum of American Art</li>
-                <li>Wondermade</li>
-                </ul>
+function showContainer(tag) {
+  // loop through all lists and hide them
+  var lists = document.getElementsByClassName('blog-list-container');
+  for(var i=0; i < lists.length; i++) {
+    lists[i].setAttribute('class', 'blog-list-container hidden');
+  }
 
-        </div>
+  // remove the hidden class from the list corresponding to the selected tag
+  var list = document.getElementById(tag + '-container');
+  if(list) {
+    list.setAttribute('class', 'blog-list-container');
+  }
+}
 
 
-                </div>
+    </script>
 
-        <div class="footer">
-        <div class="brand">
-                    <p>&copy <script language="javascript" type="text/javascript">
-var today = new Date()
-var year = today.getFullYear()
-document.write(year)
-            </script> twenty-six.design / Jarrett Fuller.</p>
-            <p>Brooklyn, NY</p>
-                </div>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script>
+        $.fn.moveIt = function(){
+  var $window = $(window);
+  var instances = [];
 
-                <div class="location">
-                    <p><a href="mailto:mail@twenty-six.design">mail@twenty-six.design</a></p>
-                    <p><a href="http://www.twitter.com/26_design">@26_design</a></p></div>
+  $(this).each(function(){
+    instances.push(new moveItItem($(this)));
+  });
 
-                <div class="contact-info">
-                    <p>Sign up for the newsletter for studio updates, news, and thoughts on design.</p>
-                    <form action="https://tinyletter.com/jarrettfuller" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/jarrettfuller', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail"></label> <input type="text" style="width:200px" name="email" id="tlemail" placeholder="Email" /><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="subscribe"/></p></form></div>
-        </div>
+  window.onscroll = function(){
+    var scrollTop = $window.scrollTop();
+    instances.forEach(function(inst){
+      inst.update(scrollTop);
+    });
+  }
+}
 
+var moveItItem = function(el){
+  this.el = $(el);
+  this.speed = parseInt(this.el.attr('data-scroll-speed'));
+};
 
+moveItItem.prototype.update = function(scrollTop){
+  var pos = scrollTop / this.speed;
+  this.el.css('transform', 'translateY(' + -pos + 'px)');
+};
 
+$(function(){
+  $('[data-scroll-speed]').moveIt();
+});
+</script>
 
-    </body>
-</html>
+ <section class="clear"></section>

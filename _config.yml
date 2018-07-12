@@ -1,0 +1,53 @@
+---
+title: twenty-six.design
+timezone: UTC
+collections:
+  work:
+    output: true
+    permalink: /work/:title
+    title: Work
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: default
+name: twenty-six
+description:
+avatar:
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github:
+  instagram:
+  linkedin:
+  pinterest:
+  rss:
+  twitter:
+  stackoverflow:
+  youtube:
+  googleplus:
+google_analytics: UA-91441149-1
+url:
+baseurl: ''
+highlighter: rouge
+permalink: "/:title/"
+version: v1.1.0
+sass:
+  style: :expanded
+plugins:
+- jekyll-sitemap
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- CNAME
