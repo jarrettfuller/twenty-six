@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="hero"><img src="{{ page.hero }}"></div>
+
+    <div class="info">
+                <div class="project-details">
+                    <h4>{{ page.title }}</h4>
+
+                    <div class="project-meta clearfix">
+    <b>Client</b> {{ page.client }}
+
+                    </div>
+
+                    <div class="project-meta clearfix">
+                    <b>Type</b>
+                    <ul class="project_tags">
+                         {% for tags in page.tags %}
+                <li>{{ tags }}</li>
+                {% endfor %}
+                        </ul>
+                    </div>
+
+<div class="project-meta clearfix">
+    <b>Year</b> {{ page.year }}
+
+                    </div>
+
+
+</div>
+
+
+        <div class="description">{{ page.discription }}
+            {% if page.site %}
+                <div class="web-link"><a href="{{ page.site}}">Visit the Site →</a></div>{% endif %}
+        </div>
+
+
+    </div>
+
+            <section class="clear"></section>
+
+
+<div class="images clearfix">
+
+    {{ content }}
+
+    <section class="clear"></section>
+
+        </div>
+
