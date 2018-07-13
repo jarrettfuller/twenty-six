@@ -4,7 +4,7 @@ permalink: "/about"
 layout: default
 ---
 
-<div class="hero"><img src="/images/studio.JPG"></div>
+<div class="hero"><img src="{{ site.github.url }}/images/studio.jpg"></div>
 
 <div class="intro">
 <h1>twenty-six is a multidisciplinary design and editorial studio, mixing client work and self-initiated projects.</h1>
