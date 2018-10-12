@@ -1,6 +1,6 @@
 ---
 layout: image
-permalink: /designobserver
+permalink: /design-observer
 title: "Culture is Not Always Popular"
 year: 2018
 client: MIT Press / Design Observer
