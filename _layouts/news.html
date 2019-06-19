@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+    {% assign sorted = site.news | sort: 'date' | reverse %}
+    {% for item in sorted %}
+<div class="news-item">
+<div class="news-image">
+     {% if item.hero %}
+            <img src="{{item.hero}}">
+             {% endif %}</div>
+
+<div class="news-content">
+    <h2> {{ item.date | date: "%B %-d, %Y" }} • {{ item.type }}</h2>
+<h1><a href="{{item.url}}">{{ item.title }}</a></h1>
+<div class="summary">{{ item.summary  }} <a href="{{item.url}}" class="news-more">More →</a></div>
+    </div>
+</div>
+    {% endfor %}
+
+<section class="clear"></section>

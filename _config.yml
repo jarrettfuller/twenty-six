@@ -2,10 +2,10 @@
 title: twenty-six.design
 timezone: UTC
 collections:
-  work:
+  news:
+    title: News
     output: true
-    permalink: /work/:title
-    title: Work
+    permalink: "/news/:title"
   posts:
     title: Posts
     output: true
