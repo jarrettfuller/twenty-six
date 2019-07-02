@@ -13,9 +13,3 @@ From the piece:
 
 > Questioning and thinking aloud remind us that design is a social act that requires engagement and collaboration. Scratching the Surface builds allies and a community of critical designers.
 
-
-![Alt text](https://www.jarrettfuller.blog/images/sts_eye.jpg)
-
-![Alt text](https://www.jarrettfuller.blog/images/sts_eye.jpg)
-
-![Alt text](https://www.jarrettfuller.blog/images/sts_eye.jpg)
