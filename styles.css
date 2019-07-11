@@ -353,7 +353,7 @@ aside {
 }
 .news-more {
     text-transform: uppercase;
-    text-decoration: underline;
+    font-weight: bold;
 }
 .news-page {
         padding: 50px 50px 50px 50px;
