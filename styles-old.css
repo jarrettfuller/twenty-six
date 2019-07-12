@@ -9,18 +9,16 @@ body {
   font-size: 16px;
     line-height: 20px;
   color: #000000;
-background-color: #ffffff;
+background-color: #222222;
 }
 .container {
     margin: auto;
     max-width: 1600px;
 }
 .content {
-/*    background-color: lightgray;*/
-/*
+    background-color: lightgray;
     margin-left: 50px;
     margin-right: 50px;
-*/
     clear: both;
 }
 p {
@@ -72,8 +70,7 @@ header {
   border-top: none;
   font-weight: normal;
   box-sizing: border-box;
-    color: black;
-    border-bottom: 1px solid lightgrey;
+    color: white;
 }
 header h1 {
   font-weight: normal;
@@ -83,12 +80,12 @@ header h1 {
   box-sizing: border-box;
     }
 header h1 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 header h1 a:hover {
-    color: black;
-    border-bottom: 3px solid black;
+    color: white;
+    border-bottom: 3px solid white;
 }
 nav {
 /*  width: 40%;*/
@@ -101,10 +98,10 @@ nav li {
     padding-left: 20px;
 }
 nav li a {
-    color: black;
+    color: white;
 }
 nav li a:hover {
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid white;
 }
 
 /*----------- HOMEPAGE --------------*/
@@ -248,7 +245,7 @@ align-items: baseline;
 .project-meta {
     width: 100%;
     padding: 10px 0px 10px 0px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid black;
     font-size: 16px;
 }
 .project-meta b {
@@ -265,8 +262,6 @@ align-items: baseline;
 .description {
     width: 50%;
     padding-left: 25px;
-    font-size: 28px;
-    line-height: 30px;
 }
 .web-link {
     padding-top: 25px;
@@ -330,9 +325,6 @@ aside {
     margin: auto;
     display: flex;
     border-top: 1px solid black;
-}
-.news-item:first-of-type {
-    border-top: none;
 }
 .news-image {
     width: 30%;
@@ -438,17 +430,16 @@ footer {
   border-top: none;
   font-weight: normal;
   box-sizing: border-box;
-    color: black;
-    border-top: 1px solid lightgrey;
+    color: white;
 }
 footer p {
     padding: 0px;
 }
 footer a {
-     color: black;
+     color: white;
 }
 footer a:hover {
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid white;
 }
 .copyright {
     width: 40%;
@@ -468,11 +459,11 @@ form {
 }
 input {
     font-size: 14px;
-/*        background-color: #222222;*/
-    color:black;
+        background-color: #222222;
+    color:white;
 }
 #tlemail {
-    border: 2px solid black;
+    border-bottom: 2px solid white;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -480,10 +471,10 @@ input {
     margin-right: 1%;
 }
 .subscribe {
-    border: .5px solid black;
+    border: .5px solid white;
     font-family: 'Work Sans', sans-serif;
     padding: 5px;
-    background-color: black;
+    background-color: #222222;
     margin-left: 1%;
     color: white;
     text-transform: uppercase;
@@ -688,8 +679,8 @@ text-align: center;
 .description {
     width: 100%;
     padding-left: 0px;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     }
 .images {
   padding: 15px 10px 15px 10px;
@@ -758,7 +749,7 @@ aside {
     .news-page {
         padding: 25px;
     }
-.news-page h1 {
+    .news-page h1 {
             font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;

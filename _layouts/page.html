@@ -2,8 +2,82 @@
 layout: default
 ---
 
-<article class="page">
+<head>
+    <style>
+    body {
+    background-color: black;
+        }
+        header {
+        color: white;
+        border-bottom: 1px solid lightgrey;
+        }
+        header h1 {
+  font-weight: normal;
+/*  width: 60%;*/
+  font-size: 18px;
+  padding-right: 100px;
+  box-sizing: border-box;
+    }
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+header h1 a:hover {
+    color: white;
+    border-bottom: 3px solid white;
+}
+nav {
+/*  width: 40%;*/
+  font-size: 10px;
+  font-size: 18px;
+}
+nav li {
+  list-style: none;
+    float: left;
+    padding-left: 20px;
+}
+nav li a {
+    color: white;
+}
+nav li a:hover {
+        border-bottom: 3px solid white;
+}
+        a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 1px white solid;
+}
+    p, ul {
+    color: white;
+        }
+        h1, h3, h4{
+            color: white;
+        }
+        article .description {
+            width: 100%;
+            padding: 0px;
+            padding-bottom: 50px;
+        }
+footer a {
+     color: white;
+}
+footer a:hover {
+        border-bottom: 3px solid white;
+}
+        input {
+        background-color: black;
+        color: white;
+}
+#tlemail {
+    border-bottom: 2px solid white;
+}
+    </style>
+
+</head>
 
     {{ content }}
 
-</article>
+
+

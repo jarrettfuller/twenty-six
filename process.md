@@ -1,7 +1,7 @@
 ---
 title: Process
 permalink: "/process"
-layout: default
+layout: page
 ---
 
 <div class="hero"><img src="/images/process.png"></div>
