@@ -500,8 +500,10 @@ TABLET
         box-sizing: border-box;
     }
     .content {
+/*
     margin-left: 20px;
     margin-right: 20px;
+*/
     width: 100% - 40px;
     box-sizing: border-box;
 }
@@ -573,6 +575,10 @@ aside {
     padding: 25px;
     margin: auto;
 }
+    .news-item h1 {
+            font-size: 36px;
+    line-height: 38px;
+    }
 .news-image {
     width: 50%;
     padding-right: 15px;
@@ -613,8 +619,8 @@ MOBILE
 }
 /*----------- HEADER --------------*/
 header {
-  padding: 15px 10px 15px 10px;
-    display: block;
+  padding: 15px 10px 5px 10px;
+flex-direction: column;
 
 }
 nav {
