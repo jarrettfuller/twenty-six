@@ -22,7 +22,7 @@ layout: page
 <p><img src="/images/jf-portrait-19.jpg" width="100%"></p>
 
 
-<p>Jarrett Fuller is a designer, writer, educator, podcaster. He hosts Scratching the Surface, a weekly podcast about design criticism and expanded practices; and teaches in both undergraduate and graduate programs at Pratt Institute, The New School Parsons School of Design, and the University of the Arts. He currently serves on the board of AIGA NY. He previously worked as an in-house designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
+<p>Jarrett Fuller is a designer, writer, educator, editor and podcaster. He is director of twenty-six, a multidisciplinary design and editorial studio; hosts the design podcast Scratching the Surface; is a contributing editor at AIGA Eye On Design; and teaches in both undergraduate and graduate programs at Pratt Institute, The New School Parsons School of Design, University of the Arts, and Rutgers University. He previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
 
 
 </article>
