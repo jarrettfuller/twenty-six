@@ -37,13 +37,13 @@ a:img {
   border-bottom: 0px;
 }
 h3 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, Work Sans, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     padding-bottom: 2px;
 }
 h4 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, Work Sans, sans-serif;
     font-weight: normal;
     padding-top: 10px;
 }
@@ -113,7 +113,7 @@ nav li a:hover {
 .intro {
     padding: 50px 50px 50px 50px ;
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
 }
 .intro h1 {
     font-size: 60px;
@@ -121,7 +121,7 @@ nav li a:hover {
     letter-spacing: -2px;
     font-weight: normal;
         width: 100%;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 }
 .intro h1 a {
     border-bottom: 1px solid #888888;
@@ -161,9 +161,9 @@ nav li a:hover {
     padding-bottom: 20px;
 }
 .project_title {
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     font-size: 24px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
 }
 .project_tags {
     font-size: 18px;
@@ -202,7 +202,7 @@ content: "";
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-size: 18px;
     }
@@ -238,10 +238,10 @@ align-items: baseline;
         padding-right: 25px;
 }
 .project-details h4 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: normal;
     padding-bottom: 30px;
 }
@@ -254,7 +254,7 @@ align-items: baseline;
 .project-meta b {
     width: 30%;
     float: left;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -352,12 +352,20 @@ aside {
     text-transform: uppercase;
 }
 .news-item h1 {
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
+    font-family: Archivo, 'Work Sans', sans-serif;
+/*    text-transform: uppercase;*/
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
     padding-bottom: 20px;
+}
+.news-item h1 a:hover {
+    border-bottom: 0px;
+    color: grey;
+}
+.news-item .summary {
+    font-size: 20px;
+    line-height: 24px;
 }
 .news-more {
     text-transform: uppercase;
@@ -386,8 +394,8 @@ aside {
     padding-top: 25px;
 }
 .news-page h1 {
-        font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
+        font-family: Archivo, 'Work Sans', sans-serif;
+/*    text-transform: uppercase;*/
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
@@ -420,7 +428,7 @@ aside {
     width: 100%;
 }
 .more-news h2 {
-          font-family: 'Work Sans', sans-serif;
+          font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 24px;
@@ -481,7 +489,7 @@ input {
 }
 .subscribe {
     border: .5px solid black;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
     padding: 5px;
     background-color: black;
     margin-left: 1%;
@@ -754,7 +762,7 @@ aside {
     text-transform: uppercase;
 }
 .news-item h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 36px;
@@ -765,7 +773,7 @@ aside {
         padding: 25px;
     }
 .news-page h1 {
-            font-family: 'Work Sans', sans-serif;
+            font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 36px;
