@@ -1,11 +1,10 @@
 ---
-title: twenty-six
-permalink: "/work"
+title: Work
 layout: default
 ---
 <div class="intro">
 
-            <h1>twenty-six is a multidisciplinary design and editorial studio, mixing client work and self-initiated projects.</h1>    </div>
+<h1>twenty-six is a multidisciplinary design and editorial studio, mixing client work and self-initiated projects.</h1>    </div>
 
 <ul class="blog-tags-list clearfix">
 
@@ -23,18 +22,18 @@ layout: default
 
 
 
-<main class="preview">
+    <main class="preview">
 
 
-<div class="blog-list-container" id="all-container">
+      <div class="blog-list-container" id="all-container">
 
-{% for item in site.work %}
+  {% for post in site.posts %}
         <div class="work">
-        <a href="{{ site.github.url }}{{ item.url }}">
+        <a href="{{ site.github.url }}{{ post.url }}">
         <div class="project">
-            <div class="project_image"><img src="{{ item.image }}"></div>
-            <div class="project_title">{{ item.title }}</div>
-            <div class="project_tags">{% for tags in item.tags %}
+            <div class="project_image"><img src="{{ post.image }}"></div>
+            <div class="project_title">{{ post.title }}</div>
+            <div class="project_tags">{% for tags in post.tags %}
                 <li>{{ tags }}</li>
                 {% endfor %}</div>
         </div>
@@ -43,20 +42,20 @@ layout: default
     {% endfor %}
       </div>
 
-{% for tag in site.tags %}
+      {% for tag in site.tags %}
         {% assign c = tag | first %}
         {% assign posts = tag | last %}
         <div class="blog-list-container hidden" id="{{ c }}-container">
 
-{% for item in posts %}
-{% if item.tags contains c %}
+            {% for post in posts %}
+              {% if post.tags contains c %}
 <div class="work">
-        <a href="{{ site.github.url }}{{ item.url }}">
+        <a href="{{ site.github.url }}{{ post.url }}">
         <div class="project">
-            <div class="project_image"><img src="{{ item.image }}"></div>
-            <div class="project_title">{{ item.title }}</div>
+            <div class="project_image"><img src="{{ post.image }}"></div>
+            <div class="project_title">{{ post.title }}</div>
             <div class="project_tags"><ul>
-                {% for tags in item.tags %}
+                {% for tags in post.tags %}
                 <li>{{ tags }}</li>
                 {% endfor %}
     </ul></div>
@@ -66,15 +65,15 @@ layout: default
               {% endif %}
             {% endfor %}
 
-</div>
-{% endfor %}
+        </div>
+      {% endfor %}
 
-</main>
+        </main>
 
 
 <script>
 
-function filter(tag) {
+    function filter(tag) {
   setActivetag(tag);
   showContainer(tag);
 }
@@ -111,7 +110,7 @@ function showContainer(tag) {
     </script>
 
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script>
+        <script>
         $.fn.moveIt = function(){
   var $window = $(window);
   var instances = [];
@@ -143,4 +142,4 @@ $(function(){
 });
 </script>
 
-<section class="clear"></section>
+ <section class="clear"></section>

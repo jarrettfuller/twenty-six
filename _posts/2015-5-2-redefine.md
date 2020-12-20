@@ -9,8 +9,8 @@ tags:
 - Environment
 discription: The Facebook Global Marketing Solutions Summit is an annual internal sales conference held in San Francisco, CA. In 2015, Jarrett led the design of the conference's identity, based on the theme "Redefine." Drawing on ideas around innovation and process, we created an evolving visual identity that included both the work the attendees were doing at Facebook and innovators throughout history who have redefined their fields.
 site:
-image: "images/redefine-gif.gif"
-hero: "images/redefine-01.jpg"
+image: "/images/redefine-gif.gif"
+hero: "/images/redefine-01.jpg"
 ---
 
 <img src="/images/redefine-02-01.png">
