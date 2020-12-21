@@ -110,3 +110,11 @@ object-fit: cover;
 .vanilla-indicators.vanilla-active {
     background-color: #ffffff;
 }
+@media screen and (max-width: 800px) {
+    #vanilla-slideshow-previous img {
+        display: none;
+    }
+    #vanilla-slideshow-next img {
+        display: none;
+    }
+}
