@@ -599,19 +599,6 @@ text-align: center;
   padding: 25px 25px 25px 25px;
     }
 
-/*----------- ABOUT --------------*/
-
-article {
-    width: 50%;
-    float: right;
-    padding: 0px 25px 25px 25px;
-}
-aside {
-    width: 50%;
-    float: left;
-    padding: 0px 25px 25px 25px;
-}
-
 /*----------- NEWS --------------*/
 .news-item {
     padding: 25px;

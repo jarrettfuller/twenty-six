@@ -71,7 +71,7 @@ layout: page
 <li>—Books/Publications</li>
 <li>—Illustration</li>
 <li>—Apparel</li>
-<li>—Environmental/Exhibition</li>
+<li>—Environmental & Exhibitions</li>
 <li>—Posters/Signage</li>
 <li>—Packaging</li>
     </ul>
