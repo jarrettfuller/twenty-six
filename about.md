@@ -34,7 +34,7 @@ layout: page
 </article>
 
 <article>
-<h3>Jarrett Fuller<br />Principal and Creative Director</h3>
+<h3>Jarrett Fuller<br />Director</h3>
 <div class="text">
 <p><img src="/images/jf-portrait-19.jpg" width="100%"></p>
 
