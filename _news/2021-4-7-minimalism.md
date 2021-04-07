@@ -1,0 +1,16 @@
+---
+title: "Jarrett Fuller's new essay on Graphic Design and Minimalism published by Eye on Design"
+permalink: "/news/minimalism"
+layout: news-item
+type: Project
+hero: 'https://jarrettfuller.com/images/projects/minimalism.jpg'
+site: hhttps://eyeondesign.aiga.org/graphic-designers-have-always-loved-minimalism-but-at-what-cost/
+site-title: Read the Essay
+summary: "A revisionist graphic design history looking at the cultural implications of confusing simplicity with clarity."
+---
+
+Last week, Eye on Design published Jarrett's latest essay, *Graphic Designers Have Always Loved Minimalism. But At What Cost?* The reported feature blends history, original reporting, and criticism to uncover graphic design's obsession with minimalism and the cultural implications of this:
+
+> “Design is all about desire, but strangely this desire seems almost subject-less today, or at least lack-less;” wrote the art critic Hal Foster in his essay Design and Crime, a loose-reinterpretation of Loos’ essay. “That is, design seems to advance a new kind of narcissism, one that is all image and no interiority — an apotheosis of the subject that is also its potential disappearance.” This is the limit of the Modernist project and the blindspots of its creators. The very promise of modernism — its modularity and replicability — is what made it a convenient tool for capitalism, turning it into a style that helped usher in our current aesthetic blandness. In trying to be everything it becomes nothing. Call it modernism, flat design, or minimalism, but in the end, the variations on this style have evolved to primarily communicate an aesthetic, or a false idea of taste. Today, the message is the design itself.
+
+> This erases the vernacular of local cultures and the plurality of human experience — race, gender, class — reinforcing the myth that design decisions are neutral while creating aesthetic hierarchies of good and bad design. What started as a utopian ideal leading us into an egalitarian future, inevitably would become another system of oppression, pushing the tastes of the few onto the many. It should be no surprise that most of the names mentioned here were white and male. (And what of Adolf Loos? He was tried for pedophilia, so maybe he’s not the guy whose racist tastes we should be perpetuating.) To resist these narratives takes more than new maximalist logos, but that’d be a start. “If graphic design reflects the society we live in, it also plays a role in reflecting, perpetuating, and maintaining the social and cultural structures in which we operate,” wrote Jen Wang in an essay called Helvetica, Modernism and the Status Quo of Design. “We need to challenge the foundation of design practice, to contextualize the history and social role of design as a buttress to imperialism, and to create space in design education for broader explorations of design aesthetic.” In a moment where we are rethinking how we talk about design history, decolonizing the industry, and rethinking design’s relationship to power, perhaps this is also a chance to rethink the cultural signifiers we give to what we call “good design,” or why we value whitespace, or why we still think that less is always more. This could be the beginning of the pendulum swinging back. Until then, to crib the architect Robert Venturi: Less is a bore.
