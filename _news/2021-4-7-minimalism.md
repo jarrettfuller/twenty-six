@@ -4,7 +4,7 @@ permalink: "/news/minimalism"
 layout: news-item
 type: Project
 hero: 'https://jarrettfuller.com/images/projects/minimalism.jpg'
-site: hhttps://eyeondesign.aiga.org/graphic-designers-have-always-loved-minimalism-but-at-what-cost/
+site: https://eyeondesign.aiga.org/graphic-designers-have-always-loved-minimalism-but-at-what-cost/
 site-title: Read the Essay
 summary: "A revisionist graphic design history looking at the cultural implications of confusing simplicity with clarity."
 ---
