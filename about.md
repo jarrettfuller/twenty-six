@@ -7,14 +7,14 @@ layout: page
 <div class="hero"><img src="{{ site.github.url }}/images/studio-color.jpg"></div>
 
 <div class="intro">
-<h1>twenty-six is a multidisciplinary design and editorial studio, mixing client work and self-initiated projects.</h1>
+<h1>twenty-six is a independent design, editorial, and research studio, mixing client work and self-initiated projects.</h1>
 </div>
 
 
 <article>
 <h3>The Studio</h3>
     <div class="description">
-<p>Founded in 2018 by Jarrett Fuller, twenty-six design is a multidiscplinary design and editorial studio that mixes client work with self-initiated projects located in Sunset Park, Brooklyn, NY. Our work takes shape across a variety of media, from books and websites to podcasts and installations and we work with clients large and small, around the world.</p>
+<p>Founded in 2018 by Jarrett Fuller, our work takes shape across a variety of media, from books and websites to podcasts and installations and we work with clients large and small, around the world.</p>
 
 <p>In addition to client work, we also produce experimental work, research projects, and original content, including Scratching the Surface, a weekly design criticism podcast; Graphic Design Readings, an online archive of canonical graphic design texts; and other books and speculative projects.</p>
 </div>
@@ -29,7 +29,7 @@ layout: page
 
 
 <h4>Follow us</h4>
-<p><a href="http://www.twitter.com/26_design">Twitter</a> | <a href="https://tinyletter.com/jarrettfuller/">Newsletter</a></p>
+<p><a href="http://www.twitter.com/26_design">Twitter</a> | <a href="https://buttondown.com/jarrettfuller/">Newsletter</a></p>
 </div>
 </article>
 
@@ -39,7 +39,7 @@ layout: page
 <p><img src="/images/jf-portrait-19.jpg" width="100%"></p>
 
 
-<p>Jarrett Fuller is a designer, writer, educator, editor and podcaster. He is director of twenty-six, a multidisciplinary design and editorial studio; hosts the design podcast Scratching the Surface; is a contributing editor at AIGA Eye On Design; and teaches in both undergraduate and graduate programs at Pratt Institute, The New School Parsons School of Design, University of the Arts, and Rutgers University. He previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
+<p>Jarrett Fuller is a designer, writer, educator, editor and podcaster. He is an assistant professor of graphic design at North Carolina State University; hosts the design podcast Scratching the Surface; is a contributing editor at AIGA Eye On Design; and director of twenty-six, a design and editorial studio. He previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
 </div>
 
 </article>
@@ -143,7 +143,7 @@ layout: page
     <div class="text">
 <p>We are not currently hiring any positions however we're always on the lookout for new collaborators. If you are an indepenent web developer, content strategist, or marketer and would like to work with us, do get in touch.</p>
 
-<p><i>twenty-six design / Jarrett Fuller Designs is a registered S Corp in New York State.</i></p>
+<p><i>twenty-six design / Jarrett Fuller Designs is a registered S Corp.</i></p>
 </div>
 </article>
 

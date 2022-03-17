@@ -5,10 +5,9 @@
     box-sizing: border-box
 }
 body {
-  font-family: 'Xanh Mono', 'Cutive Mono', Courier, monospace;
-  font-size: 18px;
-    line-height: 24px;
-        letter-spacing: 1px;
+  font-family: Helvetica;
+  font-size: 16px;
+    line-height: 18px;
   color: #000000;
 background-color: #ffffff;
 }
@@ -17,12 +16,8 @@ background-color: #ffffff;
     max-width: 1600px;
 }
 .content {
-/*    background-color: lightgray;*/
-/*
-    margin-left: 50px;
-    margin-right: 50px;
-*/
     clear: both;
+    padding-top: 100px;
 }
 p {
   padding-bottom: 15px;
@@ -37,18 +32,8 @@ a:hover {
 a:img {
   border-bottom: 0px;
 }
-h3 {
-    font-family: Archivo, Work Sans, sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    padding-bottom: 2px;
-}
-h4 {
-    font-family: Archivo, Work Sans, sans-serif;
-    font-weight: normal;
-    padding-top: 10px;
-}
 ul {
+  list-style: none inside;
   list-style: none inside;
 }
 .clearfix::after {
@@ -74,28 +59,22 @@ header {
   font-weight: normal;
   box-sizing: border-box;
     color: black;
-    border-bottom: 1px solid lightgrey;
-    letter-spacing: 1px;
+    border-bottom: 1px solid black;
+    position: fixed;
 }
 header h1 {
-  font-weight: normal;
-/*  width: 60%;*/
-  font-size: 20px;
-  padding-right: 100px;
-  box-sizing: border-box;
-    }
+    font-size: 16px;
+    font-weight: normal;
+    width: 50%;
+}
 header h1 a {
-    color: black;
-    text-decoration: none;
+        text-decoration: underline;
 }
-header h1 a:hover {
-    color: black;
-    border-bottom: 3px solid black;
-}
+/*
 nav {
-/*  width: 40%;*/
-  font-size: 20px;
+    width: 50%;
 }
+*/
 nav li {
   list-style: none;
     float: left;
@@ -103,32 +82,9 @@ nav li {
 }
 nav li a {
     color: black;
+    text-decoration: underline;
 }
 nav li a:hover {
-        border-bottom: 3px solid black;
-}
-
-/*----------- HOMEPAGE --------------*/
-
-
-.intro {
-    padding: 50px 50px 200px 50px ;
-    box-sizing: border-box;
-    font-family: Archivo, 'Work Sans', sans-serif;
-}
-.intro h1 {
-    font-size: 72px;
-    line-height: 75px;
-    letter-spacing: -2px;
-    font-weight: normal;
-        width: 100%;
-/*    text-transform: uppercase;*/
-}
-.intro h1 a {
-    border-bottom: 1px solid #888888;
-}
-.intro h1 a:hover {
-    border-bottom-color: black;
 }
 
 
@@ -161,13 +117,9 @@ nav li a:hover {
     width: 100%;
     padding-bottom: 20px;
 }
-.project_title {
-/*    text-transform: uppercase;*/
-    font-size: 24px;
-    font-family: Archivo, 'Work Sans', sans-serif;
+.project_title { font-weight: bold;
 }
 .project_tags {
-    font-size: 18px;
 }
 .project_tags li {
     list-style: none;
@@ -187,8 +139,10 @@ content: "";
 .blog-tags-list {
     padding-bottom: 10px;
   padding: 20px 50px 20px 50px;
+/*
     width: 100%;
     max-width: 1600px;
+*/
     text-align: center;
     margin: auto;
     }
@@ -198,22 +152,18 @@ content: "";
 .blog-tags-item {
     float: left;
     padding: 7px 1px 7px 1px;
-    border-bottom: 4px black solid;
+    border-bottom: 1px black solid;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-family: Archivo, 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 18px;
+    margin-bottom: 5px;
     }
 .blog-tags-item:first-child {
     margin-left: 0px;
     }
 .blog-tags-item:hover {
-    border-color: black;
-    background-color: black;
-    color: white;
+    border-color: lightgray;
     }
 
 
@@ -239,7 +189,6 @@ align-items: baseline;
         padding-right: 25px;
 }
 .project-details h4 {
-    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
@@ -255,7 +204,6 @@ align-items: baseline;
 .project-meta b {
     width: 30%;
     float: left;
-    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -385,8 +333,6 @@ aside h3 {
     text-transform: uppercase;
 }
 .news-item h1 {
-    font-family: Archivo, 'Work Sans', sans-serif;
-/*    text-transform: uppercase;*/
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
@@ -427,8 +373,6 @@ aside h3 {
     padding-top: 25px;
 }
 .news-page h1 {
-        font-family: Archivo, 'Work Sans', sans-serif;
-/*    text-transform: uppercase;*/
     font-weight: normal;
     font-size: 48px;
     line-height: 48px;
@@ -461,7 +405,6 @@ aside h3 {
     width: 100%;
 }
 .more-news h2 {
-          font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 24px;
@@ -512,7 +455,7 @@ input {
 /*        background-color: #222222;*/
     color:black;
 }
-#bd-email {
+#tlemail {
     border: 2px solid black;
     border-top: none;
     border-left: none;
@@ -520,32 +463,14 @@ input {
     padding: 5px;
     margin-right: 1%;
 }
-button .subscribe {
+.subscribe {
     border: .5px solid black;
-    font-family: Archivo, 'Work Sans', sans-serif;
     padding: 5px;
     background-color: black;
     margin-left: 1%;
     color: white;
     text-transform: uppercase;
 
-}
-input[type="email"] {
-    border: 2px solid black;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    padding: 5px;
-    margin-right: 1%;
-}
-input[type="submit"] {
-    border: .5px solid black;
-    font-family: Archivo, 'Work Sans', sans-serif;
-    padding: 5px;
-    background-color: black;
-    margin-left: 1%;
-    color: white;
-    text-transform: uppercase;
 }
 
 /*-----------------------------------
@@ -569,14 +494,7 @@ TABLET
   padding: 20px 20px 20px 20px;
   }
 
-/*--------- HOMEPAGE -------------*/
-.intro {
-    padding: 25px;
-}
-.intro h1 {
-    font-size: 36px;
-    line-height: 40px;
-}
+
 /*----------- WORK LIST--------------*/
 .blog-list-container {
     padding: 0px;
@@ -823,7 +741,6 @@ aside {
     text-transform: uppercase;
 }
 .news-item h1 {
-    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 36px;
@@ -834,7 +751,6 @@ aside {
         padding: 25px;
     }
 .news-page h1 {
-            font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 36px;
