@@ -5,8 +5,17 @@ layout: default
 <div class="hero"><img src="{{ page.hero }}"></div>
 
     <div class="info">
+         <div class="description">
+            <h4>{{ page.title }}</h4>
+<p>
+            {{ page.discription }}</p>
+            {% if page.site %}
+                <div class="web-link"><a href="{{ page.site}}">Visit the Site →</a></div>{% endif %}
+        </div>
+
+
                 <div class="project-details">
-                    <h4>{{ page.title }}</h4>
+
 
                     <div class="project-meta clearfix">
     <b>Client</b> {{ page.client }}
@@ -30,11 +39,6 @@ layout: default
 
 </div>
 
-
-        <div class="description">{{ page.discription }}
-            {% if page.site %}
-                <div class="web-link"><a href="{{ page.site}}">Visit the Site →</a></div>{% endif %}
-        </div>
 
 
     </div>

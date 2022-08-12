@@ -2,11 +2,11 @@
 * {
   padding: 0px;
   margin: 0px;
-    box-sizing: border-box
+  box-sizing: border-box
 }
 body {
-  font-family: Helvetica;
-  font-size: 16px;
+  font-family: 'neue-haas-grotesk-text', Helvetica;
+   font-size: 16px;
     line-height: 18px;
   color: #000000;
 background-color: #ffffff;
@@ -16,8 +16,12 @@ background-color: #ffffff;
     max-width: 1600px;
 }
 .content {
+/*    background-color: lightgray;*/
+/*
+    margin-left: 50px;
+    margin-right: 50px;
+*/
     clear: both;
-    padding-top: 100px;
 }
 p {
   padding-bottom: 15px;
@@ -32,8 +36,17 @@ a:hover {
 a:img {
   border-bottom: 0px;
 }
+h3 {
+  font-family: 'neue-haas-grotesk-text', Helvetica;
+    font-weight: normal;
+    padding-bottom: 2px;
+}
+h4 {
+  font-family: 'neue-haas-grotesk-text', Helvetica;
+    font-weight: normal;
+    padding-top: 10px;
+}
 ul {
-  list-style: none inside;
   list-style: none inside;
 }
 .clearfix::after {
@@ -59,32 +72,63 @@ header {
   font-weight: normal;
   box-sizing: border-box;
     color: black;
-    border-bottom: 1px solid black;
-    position: fixed;
+    border-bottom: 1px solid lightgrey;
+
 }
 header h1 {
-    font-size: 16px;
-    font-weight: normal;
+/*  font-weight: 400;*/
+  padding-right: 100px;
+  box-sizing: border-box;
+   font-size: 16px;
+    line-height: 18px;
     width: 50%;
-}
+    }
 header h1 a {
-        text-decoration: underline;
+    color: black;
+    text-decoration: none;
+        border-bottom: 1px solid black;
 }
-/*
+header h1 a:hover {
+    color: black;
+    border-bottom: 3px solid black;
+}
 nav {
-    width: 50%;
+  width: 50%;
 }
-*/
 nav li {
   list-style: none;
     float: left;
     padding-left: 20px;
+  font-size: 16px;
+    line-height: 18px;
 }
 nav li a {
     color: black;
-    text-decoration: underline;
 }
 nav li a:hover {
+        border-bottom: 3px solid black;
+}
+
+/*----------- HOMEPAGE --------------*/
+
+
+.intro {
+    padding: 50px 50px 200px 50px ;
+    box-sizing: border-box;
+  font-family: 'neue-haas-grotesk-text', Helvetica;
+}
+.intro h1 {
+   font-size: 16px;
+    line-height: 18px;
+/*    font-weight: 400;*/
+        width: 100%;
+/*    text-transform: uppercase;*/
+}
+.intro h1 a {
+    border-bottom: 1px solid #888888;
+}
+.intro h1 a:hover {
+    border-bottom-color: black;
 }
 
 
@@ -117,7 +161,9 @@ nav li a:hover {
     width: 100%;
     padding-bottom: 20px;
 }
-.project_title { font-weight: bold;
+.project_title {
+/*    text-transform: uppercase;*/
+  font-family: 'neue-haas-grotesk-text', Helvetica;
 }
 .project_tags {
 }
@@ -139,10 +185,8 @@ content: "";
 .blog-tags-list {
     padding-bottom: 10px;
   padding: 20px 50px 20px 50px;
-/*
     width: 100%;
     max-width: 1600px;
-*/
     text-align: center;
     margin: auto;
     }
@@ -152,18 +196,23 @@ content: "";
 .blog-tags-item {
     float: left;
     padding: 7px 1px 7px 1px;
-    border-bottom: 1px black solid;
+    border-bottom: 4px black solid;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-bottom: 5px;
+  font-family: 'neue-haas-grotesk-text', Helvetica;
+    text-transform: uppercase;
+   font-size: 16px;
+    line-height: 18px;
     }
 .blog-tags-item:first-child {
     margin-left: 0px;
     }
 .blog-tags-item:hover {
-    border-color: lightgray;
+    border-color: black;
+    background-color: black;
+    color: white;
     }
 
 
@@ -189,8 +238,8 @@ align-items: baseline;
         padding-right: 25px;
 }
 .project-details h4 {
+  font-family: 'neue-haas-grotesk-text', Helvetica;
     text-transform: uppercase;
-    font-size: 30px;
     line-height: 36px;
     font-weight: normal;
     padding-bottom: 30px;
@@ -204,6 +253,7 @@ align-items: baseline;
 .project-meta b {
     width: 30%;
     float: left;
+  font-family: 'neue-haas-grotesk-text', Helvetica;
     text-transform: uppercase;
     font-weight: normal;
 }
@@ -214,7 +264,6 @@ align-items: baseline;
 .description {
     width: 50%;
     padding-left: 25px;
-    font-size: 28px;
     line-height: 36px;
 }
 .web-link {
@@ -328,13 +377,13 @@ aside h3 {
 }
 .news-item h2 {
     font-weight: normal;
-    font-size: 18px;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
 .news-item h1 {
+    font-family: Archivo, 'Work Sans', sans-serif;
+/*    text-transform: uppercase;*/
     font-weight: normal;
-    font-size: 48px;
     line-height: 48px;
     padding-bottom: 20px;
 }
@@ -343,12 +392,11 @@ aside h3 {
     color: grey;
 }
 .news-item .summary {
-    font-size: 20px;
     line-height: 24px;
 }
 .news-more {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 .news-page {
         padding: 50px 50px 50px 50px;
@@ -366,15 +414,15 @@ aside h3 {
     padding-right: 25px;
 }
 .news-page .info .project-details .description {
-    font-size: 24px;
     line-height: 26px;
     width: 100%;
     padding: 0px;
     padding-top: 25px;
 }
 .news-page h1 {
+        font-family: Archivo, 'Work Sans', sans-serif;
+/*    text-transform: uppercase;*/
     font-weight: normal;
-    font-size: 48px;
     line-height: 48px;
     padding-bottom: 50px;
 }
@@ -383,7 +431,7 @@ aside h3 {
     padding-top: 25px;
 }
 .news-story a {
-    font-weight: bold;
+    font-weight: 700;
 }
 .news-story blockquote {
     padding-left: 25px;
@@ -405,9 +453,9 @@ aside h3 {
     width: 100%;
 }
 .more-news h2 {
+          font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 24px;
     line-height: 26px;
 }
 /*----------- FOOTER --------------*/
@@ -451,11 +499,10 @@ form {
     margin-left: -2px;
 }
 input {
-    font-size: 14px;
 /*        background-color: #222222;*/
     color:black;
 }
-#tlemail {
+#bd-email {
     border: 2px solid black;
     border-top: none;
     border-left: none;
@@ -463,14 +510,32 @@ input {
     padding: 5px;
     margin-right: 1%;
 }
-.subscribe {
+button .subscribe {
     border: .5px solid black;
+    font-family: Archivo, 'Work Sans', sans-serif;
     padding: 5px;
     background-color: black;
     margin-left: 1%;
     color: white;
     text-transform: uppercase;
 
+}
+input[type="email"] {
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    margin-right: 1%;
+}
+input[type="submit"] {
+    border: .5px solid black;
+    font-family: Archivo, 'Work Sans', sans-serif;
+    padding: 5px;
+    background-color: black;
+    margin-left: 1%;
+    color: white;
+    text-transform: uppercase;
 }
 
 /*-----------------------------------
@@ -494,7 +559,14 @@ TABLET
   padding: 20px 20px 20px 20px;
   }
 
-
+/*--------- HOMEPAGE -------------*/
+.intro {
+    padding: 25px;
+}
+.intro h1 {
+   font-size: 16px;
+    line-height: 18px;
+}
 /*----------- WORK LIST--------------*/
 .blog-list-container {
     padding: 0px;
@@ -540,8 +612,8 @@ text-align: center;
     margin: auto;
 }
     .news-item h1 {
-            font-size: 36px;
-    line-height: 38px;
+   font-size: 16px;
+    line-height: 18px;
     }
 .news-image {
     width: 50%;
@@ -670,7 +742,8 @@ text-align: center;
     }
 .images .description {
     padding-bottom: 15px;
-    font-size: 24px;
+   font-size: 16px;
+    line-height: 18px;
 }
 .images .caption {
     width: 100%;
@@ -736,25 +809,28 @@ aside {
 }
 .news-item h2 {
     font-weight: normal;
-    font-size: 18px;
+   font-size: 16px;
+    line-height: 18px;
     padding-bottom: 5px;
     text-transform: uppercase;
 }
 .news-item h1 {
+    font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 36px;
+   font-size: 16px;
+    line-height: 18px;
     padding-bottom: 15px;
 }
     .news-page {
         padding: 25px;
     }
 .news-page h1 {
+            font-family: Archivo, 'Work Sans', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 36px;
+   font-size: 16px;
+    line-height: 18px;
     padding-bottom: 15px;
     }
 .news-page .info {

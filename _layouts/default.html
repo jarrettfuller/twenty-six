@@ -4,16 +4,9 @@
     <title>{{ page.title }} | twenty-six.design</title>
         <meta name="viewport" content="width=device-width">
         <meta charset="UTF-8">
-                      <link rel="stylesheet" type="text/css" href="../styles.css" />
-<!--
-<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
--->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/uvr2qfi.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
         <link rel="icon" type="image/png" href="{{ site.github.url }}/images/icon.png">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -30,22 +23,54 @@
 
     </head>
     <body id="top">
-        <div class="container">
-         <header>
-            <h1><a href="../index.html">twenty-six.design</a></h1>
-            <nav><ul>
-                <li><a href="{{ site.github.url }}/work">Work</a></li>
+        <div class="sidepanel">
+
+            <sidebar>
+
+<ul>
+    <li>&copy <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+            </script> • Raleigh, NC</li>
+<!--    <li><a href="{{ site.github.url }}/work">twenty-six.design</a></li>-->
+    <li><a href="{{ site.github.url }}/work">Work</a></li>
                 <li><a href="{{ site.github.url }}/about">About</a></li>
-<!--                <li><a href="{{ site.github.url }}/process">Process</a></li>-->
                 <li><a href="{{ site.github.url }}/news">News</a></li>
-             </ul></nav>
 
-        </header>
+             </ul>
+<!--
+                <h1></h1>
+                    <h2><a href="../index.html">&copy <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+            </script> </a></h2>
+-->
 
+</sidebar>
 
+</div>
 
+        <div class="container">
 
 <div class="content">
+<header>
+    <div class="headline"><p><a href="../index.html">twenty-six.design</a> is an independent design, editorial, and research studio led by <a href="">Jarrett Fuller</a>. Our work takes shape across a variety of media, from books and websites to podcasts and installations and we work with clients large and small, around the world.</p>
+
+<p>In addition to client work, we also produce experimental work, research projects, and original content, including <a href="">Scratching the Surface</a>, a weekly design criticism podcast; <a href="">readings.design</a>, an online archive of canonical graphic design texts; and other books and speculative projects.</p>
+
+<!--
+<ul>
+                <li><a href="{{ site.github.url }}/work">Work</a></li>
+                <li><a href="{{ site.github.url }}/about">About</a></li>
+                <li><a href="{{ site.github.url }}/news">News</a></li>
+                <li><a href"" class="jf">jarrettfuller.com</a></li>
+             </ul></div>
+-->
+
+</header>
+
       {{ content }}
     </div>
 

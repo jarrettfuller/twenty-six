@@ -2,15 +2,12 @@
 layout: default
 ---
 
-<!--<div class="hero"><img src="{{ page.hero }}"></div>-->
-
 <div class="news-page">
 <h1>{{ page.title }}</h1>
 
+<img src="{{ page.hero }}">
 
-    <div class="info">
-
-                <div class="project-details">
+        <div class="project-details">
 
                 <div class="project-meta clearfix">
     <b>Date</b> {{ page.date | date: "%B %-d, %Y"}}
@@ -35,40 +32,20 @@ layout: default
 
 </div>
 
-
-<img src="{{ page.hero }}">
-
-
-</div>
-            <section class="clear"></section>
-
-
-<div class="images clearfix">
-
-
-        </div>
-
-    <section class="clear"></section>
+<section class="clear"></section>
 
 </div>
 
 <div class="news-latest">
-<!--    <h3>Latest News</h3>-->
+<a class="next" href="{{ site.github.url }}{{page.next.url}}">  {% if page.next.url %}&leftarrow; Next{% endif %}</a>
 
-{% for news in site.news limit:3 %}
-      <div class="more-news">
-                <a href="{{ news.url }}">
-        <figure>
-            <img src="{{ news.hero}}" alt="image"/>
-            <figcaption>
-           <h2>{{ news.title }}</h2></figcaption>
-        </figure>
-          </a>
-        </div>
-  {% endfor %}
 
-        <section class="clear"></section>
-    </div>
+{% if page.previous.url %}
+    <a class="prev" href="{{ site.github.url }}{{page.previous.url}}">
+        Previous &rightarrow;</a>
+  {% endif %}
+
+</div>
 
     <section class="clear"></section>
     <section class="clear"></section>
