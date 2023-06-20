@@ -30,7 +30,7 @@ layout: page
 <h3>Jarrett Fuller<br />Director</h3>
 <div class="text">
 
-<p>Jarrett Fuller is a designer, writer, educator, editor and podcaster. He is an assistant professor of graphic design at North Carolina State University; hosts the design podcast Scratching the Surface; is a contributing editor at AIGA Eye On Design; and director of twenty-six, a design and editorial studio. He previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
+<p>Jarrett Fuller is a designer, writer, educator, editor and podcaster. He is an assistant professor of graphic design at North Carolina State University and hosts the design podcast Scratching the Surface. He previously worked as a designer at Facebook, Warby Parker, and The Whitney Museum of American Art. He received his BFA in graphic design from Kutztown University and his MFA in graphic design and critical studies from Maryland Institute College of Art.</p>
 </div>
 
 </article>
