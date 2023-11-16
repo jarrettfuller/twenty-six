@@ -35,8 +35,9 @@ footer-links:
   youtube:
   googleplus:
 google_analytics: UA-91441149-1
-url:
+url: 
 baseurl: ''
+repository: jarrettfuller/twenty-six
 highlighter: rouge
 permalink: "/:title/"
 version: v1.1.0
@@ -51,3 +52,4 @@ exclude:
 - LICENSE
 - README.md
 - CNAME
+github: [metadata] 
