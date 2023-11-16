@@ -74,7 +74,7 @@ layout: page
 <li>—Research</li>
 <li>—Writing</li>
 <li>—Curating</li>
-<li>—Content Development</li>
+<li>—Public Relations</li>
     </ul>
         </div>
 </div>
