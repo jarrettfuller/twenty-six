@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="news-list">
-    {% assign sorted = site.news | sort: 'date' | reverse %}
+    {% assign sorted = site.news | sort: 'date' |  reverse %}
     {% for item in sorted %}
 <div class="news-item">
 
